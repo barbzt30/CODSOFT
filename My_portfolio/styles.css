@@ -1,0 +1,246 @@
+body {
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  
+}
+
+
+
+h1 {
+    color: white ;
+    font-size: 900;
+    line-height: 48px;
+    margin: 0;
+    font-family: 'Times New Roman', Times,serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    color: white;
+    text-align: center;
+    background: grey;
+    padding: 20px;;
+    margin: 30px auto;
+    max-width: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.image-container {
+    overflow: hidden;
+}
+.reveal-image {
+    padding: 20px;
+    margin: 40px;
+    height: 100vh;
+    animation: reveal 3s linear forwards;
+}
+.reveal-image.active {
+    transform: translateY(0);
+}
+@keyframes reveal {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.me {
+    color: #ffc720;
+    cursor: pointer;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: x-large;
+    background: fixed;
+    background-color: grey;
+    padding-top: 20px;
+    margin-left: 10px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    }
+.nav-link {
+color: white;
+}
+.nav-link:hover {
+    color:aqua;
+}
+
+.navbar-brand {
+    color: purple;
+   
+}
+
+.nav-link.active:hover {
+    color: aqua;
+}
+
+.nav-link.active {
+    color: white;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times,serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffc720;
+    padding-top: 40px;
+}
+
+p {
+    font-family:'Times New Roman' Times, serif;
+    font-size: x-large;
+    font-weight: light;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    margin: 10px;
+}
+.main {
+     font-family:'Times New Roman' Times, serif;
+    font-size: x-large;
+    font-weight: light;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    margin: 10px;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: pop-in 2s ease forwards;
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.city {
+     border-radius: 60px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 40%;
+     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.city:hover {
+    transform: scale(1.1)
+}
+.hellenic {
+     border-radius: 60px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 40%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.hellenic:hover {
+ transform: scale(1.1)
+}
+
+.jolie {
+     border-radius: 60px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 40%;
+     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.jolie:hover {
+    transform: scale(1.1)
+}
+
+.weather {
+     border-radius: 60px;
+    padding: 20px;
+    margin-left: 100px !important;
+    max-width: 40%;
+     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.weather:hover {
+    transform: scale(1.1)
+}
+.pop-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popUp 1s forwards;
+}
+@keyframes popUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icons {
+    margin-left: 100px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.icons:hover {
+    transition: all 200ms ease-in-out;
+    opacity: 0.8;
+}
+
+.icon-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.icon-link {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.icon-linkB {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.images:hover .icon-linkB {
+     opacity: 1;
+    color: turquoise;
+}
+.images:hover .icon-link {
+    opacity: 1;
+    color: turquoise;
+}
+.images {
+    position: relative;
+    display: inline-block;
+}
