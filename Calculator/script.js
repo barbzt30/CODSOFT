@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (operator && firstOperand !== null){
             secondOperand = parseFloat(currentInput);
             const result = calculate(firstOperand, secondOperand, operator);
-             equation += `${secondOperand} = ${result}`;
+             equation += ` = ${result}`;
  
         }
          
